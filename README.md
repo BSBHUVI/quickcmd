@@ -95,11 +95,6 @@ q add
 q edit gpa
 ```
 
-📂 Open your config file
-
-```sh
-q open
-```
 
 ## 🗑 Uninstall
 
