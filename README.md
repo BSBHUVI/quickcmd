@@ -27,7 +27,7 @@ npm install -g quickcmd
 npm link
 
 ## Create your config file:
-quick init
+q init
 
 ## This creates:
 ~/.quickcmd.json
@@ -63,13 +63,13 @@ quick init
 
 ```sh
 ## Run a simple alias
-quick gp
+q gp
 
 ## Runs 
 git push
 
 ## ▶ Alias with variables
-quick gpa "Fix sidebar bug" main
+q gpa "Fix sidebar bug" main
 ## If arguments are missing, quickcmd asks interactively:
 Enter value for branchName:
 
@@ -78,7 +78,7 @@ Enter value for branchName:
 ## 📜 List all commands
 
 ```sh
-quick list
+q list
 ```
 
 ## 🛠 Managing Commands from the CLI
@@ -86,19 +86,19 @@ quick list
 ➕ Add a new shortcut interactively
 
 ```sh
-quick add
+q add
 ```
 
 ✏ Edit an existing shortcut
 
 ```sh
-quick edit gpa
+q edit gpa
 ```
 
 📂 Open your config file
 
 ```sh
-quick open
+q open
 ```
 
 ## 🗑 Uninstall
