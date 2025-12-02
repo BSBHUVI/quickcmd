@@ -5,9 +5,9 @@ import os from "os";
 export type AliasCommand =
   | string
   | {
-      command?: string;            // actual command string
-      vars?: string[];             // named variables
-      modes?: Record<string, AliasCommand>; // for sub-modes
+      command?: string;      
+      vars?: string[];        
+      modes?: Record<string, AliasCommand>;
       description?: string;
     };
 
@@ -40,7 +40,7 @@ function mergeConfigs(base: QuickConfig, extra: QuickConfig): QuickConfig {
     extends: [...(base.extends || []), ...(extra.extends || [])],
     aliases: {
       ...base.aliases,
-      ...extra.aliases, // project overrides global
+      ...extra.aliases,
     },
   };
 }
@@ -56,7 +56,6 @@ export function loadConfig(): QuickConfig | null {
     config = config ? mergeConfigs(config, projectCfg) : projectCfg;
   }
 
-  // handle "extends"
   if (config && config.extends && config.extends.length > 0) {
     for (const extPath of config.extends) {
       const resolved = path.isAbsolute(extPath)
@@ -85,8 +84,8 @@ export function ensureDefaultConfig() {
       JSON.stringify(defaultCfg, null, 2),
       "utf8"
     );
-    console.log(`✅ Created default config at ${DEFAULT_GLOBAL}`);
+    console.log(`Created default config at ${DEFAULT_GLOBAL}`);
   } else {
-    console.log(`✔ Config already exists at ${DEFAULT_GLOBAL}`);
+    console.log(`Config already exists at ${DEFAULT_GLOBAL}`);
   }
 }

@@ -16,12 +16,12 @@ export async function addAliasInteractive() {
   });
 
   if (!name) {
-    console.log("❌ Shortcut name required.");
+    console.log("Shortcut name required.");
     return;
   }
 
   if (config.aliases[name]) {
-    console.log(`⚠️ Shortcut '${name}' already exists. Use: quick edit ${name}`);
+    console.log(`Shortcut '${name}' already exists. Use: quick edit ${name}`);
     return;
   }
 
@@ -98,5 +98,5 @@ export async function addAliasInteractive() {
   config.aliases[name] = entry;
   fs.writeFileSync(CONFIG_PATH, JSON.stringify(config, null, 2), "utf8");
 
-  console.log(`✅ Shortcut '${name}' added successfully.`);
+  console.log(`Shortcut '${name}' added successfully.`);
 }

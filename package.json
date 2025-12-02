@@ -1,12 +1,15 @@
 {
   "name": "bhuvi-quickcmd",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Create custom shortcut commands to run long terminal commands quickly",
   "type": "module",
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "LICENSE",
+    "README.md"
   ],
+  "license" :"MIT",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -24,5 +27,25 @@
     "@types/node": "^24.10.1",
     "@types/prompts": "^2.4.9",
     "typescript": "^5.0.0"
+  },
+  "keywords": [
+  "cli",
+  "terminal",
+  "automation",
+  "typescript",
+  "ts"
+],
+"typesVersions": {
+  "*": {
+    "*": ["dist/*"]
   }
+},
+ "repository": {
+    "type": "git",
+    "url": "https://github.com/BSBHUVI/quickcmd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BSBHUVI/quickcmd/issues"
+  },
+  "homepage": "https://github.com/BSBHUVI/quickcmd#readme"
 }

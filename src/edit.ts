@@ -8,11 +8,11 @@ export async function editAlias(alias: string) {
   const config = loadConfig();
 
   if (!config?.aliases[alias]) {
-    console.log(`❌ Shortcut '${alias}' not found.`);
+    console.log(`Shortcut '${alias}' not found.`);
     return;
   }
 
-  console.log(`✏️ Opening '${alias}' for editing...`);
+  console.log(` Opening '${alias}' for editing...`);
 
   try {
     execSync(`code "${configPath}"`, { stdio: "ignore" });

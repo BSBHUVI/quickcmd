@@ -27,5 +27,5 @@ export function getSuggestions(config: QuickConfig, input: string): string[] {
       k.toLowerCase().includes(lower)
   );
 
-  return suggestions.slice(0, 5); // top 5
+  return suggestions.slice(0, 5);
 }

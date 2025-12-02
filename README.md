@@ -4,15 +4,17 @@
 [![downloads]](https://www.npmjs.com/package/bhuvi-quickcmd)
 [![license]](https://github.com/BSBHUVI/quickcmd/blob/master/LICENSE)
 
-> A terminal automation CLI that lets you create short commands for long repetitive scripts — Git, npm, CI, deployment commands and more.
+> A terminal automation CLI that lets you create short commands for long repetitive scripts — Git, npm, CI, Docker deployment commands and more.
 
 ---
 
-## ✨ Why quickcmd?
+## ✨ 🚀 Why QuickCMD?
 
-If you find yourself repeatedly typing long terminal commands like:
-or:
-Then **quickcmd** saves you time by turning them into short reusable commands like:
+Running long or repetitive terminal commands slows developers down — especially when switching between projects, environments, or tools. Typing (or constantly copy-past­ing) commands like build scripts, SSH connections, docker containers, or dev servers becomes annoying and error-prone.
+
+QuickCMD eliminates that friction.
+
+With QuickCMD, you can create short, memorable aliases for complex commands and run them instantly from anywhere — just like shortcuts for your CLI. No more searching through terminal history or digging into docs.
 
 ---
 
@@ -23,14 +25,32 @@ Install globally:
 ```sh
 npm install -g quickcmd
 
-## Development Only
-npm link
-
 ## Create your config file:
 q init
 
 ## This creates:
 ~/.quickcmd.json
+
+```
+
+## 📜 List all commands
+
+```sh
+q list
+```
+
+## 🛠 Managing Commands from the CLI
+
+➕ Add a new shortcut Command interactively
+
+```sh
+q add
+```
+
+✏ Edit an existing shortcut Command
+
+```sh
+q edit gpa
 ```
 
 ```sh
@@ -74,27 +94,6 @@ q gpa "Fix sidebar bug" main
 Enter value for branchName:
 
 ```
-
-## 📜 List all commands
-
-```sh
-q list
-```
-
-## 🛠 Managing Commands from the CLI
-
-➕ Add a new shortcut interactively
-
-```sh
-q add
-```
-
-✏ Edit an existing shortcut
-
-```sh
-q edit gpa
-```
-
 
 ## 🗑 Uninstall
 

@@ -15,13 +15,13 @@ async function main() {
 
   const config = loadConfig();
   if (!config) {
-    console.error("⚠ No quickcmd config found.");
+    console.error("No quickcmd config found.");
     console.log("Create ~/.quickcmd.json or run: quick init");
     process.exit(1);
   }
 
   if (cmd === "list") {
-    console.log("📜 Available aliases:");
+    console.log("Available aliases:");
     Object.keys(config.aliases).forEach((k) => {
       let description =
         typeof config.aliases[k] !== "string"
@@ -45,10 +45,10 @@ async function main() {
 
   if (!cmd) {
     console.log("Usage:");
-    console.log("  quick <alias> [...args]");
-    console.log("  quick <alias> <mode> [...args]");
-    console.log("  quick list");
-    console.log("  quick init");
+    console.log("  q <alias> [...args]");
+    console.log("  q <alias> <mode> [...args]");
+    console.log("  q list");
+    console.log("  q init");
     process.exit(0);
   }
 
