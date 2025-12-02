@@ -1,0 +1,8 @@
+src/
+tests/
+coverage/
+.vscode/
+.github/
+.gitignore
+README-images/
+*.log

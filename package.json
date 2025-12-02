@@ -1,6 +1,6 @@
 {
-  "name": "quickcmd",
-  "version": "1.0.1",
+  "name": "bhuvi-quickcmd",
+  "version": "1.0.0",
   "description": "Create custom shortcut commands to run long terminal commands quickly",
   "type": "module",
   "main": "dist/index.js",
