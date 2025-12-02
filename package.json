@@ -1,0 +1,28 @@
+{
+  "name": "quickcmd",
+  "version": "1.0.1",
+  "description": "Create custom shortcut commands to run long terminal commands quickly",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "bin": {
+    "q": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/prompts": "^2.4.9",
+    "typescript": "^5.0.0"
+  }
+}
